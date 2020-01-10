@@ -1,0 +1,30 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.IO;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            var numbers = new List<int> { 4, 4, 6, 8, 5, 2, 4, 8, 9, 9 };
+            int element = 0;
+            int count = 0;
+
+            for (int i = 0; i < numbers.Count; i++)
+            {
+                int tempElement = numbers[i];
+                int tempCount = 0;
+                for (int j = 0; j < numbers.Count; j++)
+                if (numbers[j] == tempElement) { tempCount++; }
+                if (tempCount > count) { element = tempElement; count = tempCount; }
+            }
+            Console.WriteLine("the most common element is " + element + " and the element has been included in the list " + count + " times " );
+            Console.ReadLine();
+        }
+    }
+}
