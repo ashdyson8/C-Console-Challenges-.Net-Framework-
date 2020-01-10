@@ -1,4 +1,7 @@
-﻿using System;
+Most frequent number in a list of integers - C#
+Input -> 4, 4, 6, 8, 5, 2, 4, 8, 9, 9  output -> 4, frequented 3 times
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
