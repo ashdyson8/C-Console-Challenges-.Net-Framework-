@@ -1,4 +1,7 @@
-﻿using System;
+Input -> 1,4,5,5,8,9,2,2,9,8,3,5 output -> 1,2,3,4,5,8,9
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
