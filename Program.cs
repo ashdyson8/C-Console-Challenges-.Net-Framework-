@@ -1,4 +1,8 @@
-﻿using System;
+Smallest positive integer missing from the array 
+Input -> 3, 4, -8 ,4 ,5 , 6, 9, 1, -11, 15 ------> output = 2
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
