@@ -1,4 +1,7 @@
-﻿using System;
+Input -> 38293367 output -> 98763332
+
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
