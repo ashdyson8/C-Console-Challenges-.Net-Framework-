@@ -1,16 +1,8 @@
 Input -> 38293367 output -> 98763332
 
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
 
-namespace ConsoleApp1
-{
-    class Program
+class Program
     {
         public static void Main(string[] args)
         {
@@ -48,4 +40,4 @@ namespace ConsoleApp1
             return result;
         }
     }
-}
+
