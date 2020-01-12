@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
+Given an array containing N elements and an integer K. It is allowed to perform the following operation any number of times on
+the given array:
 
-namespace ConsoleApp1
-{
+Insert the K-th element at the end of the array and delete the first element of the array.
+The task is to find the minimum number of moves needed to make all elements of the array equal
+
+e.g. 
+k = 5
+input -> 4,7,8,9,5 output -> 4 (number of times for each integer in the array to have a value of 5)
+    
+    
     class Program
     {
         public static void Main(string[] args)
@@ -25,7 +27,7 @@ namespace ConsoleApp1
         {
             int i;
 
-                        for (i = k - 1; i < n; i++)
+            for (i = k - 1; i < n; i++)
                 if (arr[i] != arr[k - 1])
                     return -1;
 
