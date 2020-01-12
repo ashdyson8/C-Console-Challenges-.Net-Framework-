@@ -1,14 +1,6 @@
 Input -> 12, 13, 1, 10, 34, 1 output -> 34, 13, 12
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
 
-namespace ConsoleApp1
-{
     class Program
     {
         public static void Main(string[] args)
@@ -52,4 +44,4 @@ namespace ConsoleApp1
             Console.WriteLine("Three largest elements are " +  first + " " + second + " " + third);
         }
     }
-}
+
