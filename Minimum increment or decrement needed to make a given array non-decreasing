@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
+Given an array arr[] of N integers, the task is to sort the array in non-decreasing 
+order by performing the minimum number of operations. In a single operation, 
+an element of the array can either be incremented or decremented by 1. 
+Print the minimum number of operations required.
+    
+    e.g. input -> 1,2,1,4,3 output -> 2 (as we have incremented the third element of the array by 1 to equate to 2, and 
+    decremented the fourth element by 1 to equate to 3.
 
-namespace ConsoleApp1
-{
     class Program
     {
         public static void Main(string[] args)
@@ -28,7 +27,7 @@ namespace ConsoleApp1
             
             int large = ar.Max();
 
-           
+            
             int[,] dp = new int[n, large + 1];
 
             for (int j = small; j <= large; j++)
@@ -36,14 +35,13 @@ namespace ConsoleApp1
                 dp[0, j] = Math.Abs(ar[0] - j);
             }
 
-         
+        
             for (int i = 1; i < n; i++)
             {
                 int minimum = int.MaxValue;
                 for (int j = small; j <= large; j++)
                 {
 
-                   
                     minimum = Math.Min(minimum, dp[i - 1, j]);
                     dp[i, j] = minimum + Math.Abs(ar[i] - j);
                 }
