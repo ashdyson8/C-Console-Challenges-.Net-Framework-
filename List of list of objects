@@ -1,14 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
+We can use a List of list of objects if we want to store a number of lists of different types in a generic list.
 
-namespace ConsoleApp1
-{
-    class Program
-    {
         public static void Main(string[] args)
         {
             List<List<object>> List = new List<List<object>>();
@@ -38,7 +29,4 @@ namespace ConsoleApp1
             Console.ReadLine();
 
         }
-       
-
-    }
-}
+      
