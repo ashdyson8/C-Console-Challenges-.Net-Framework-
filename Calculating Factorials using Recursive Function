@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
+A recursive function is a function that calls itself.
+Here is an example of how to calculate factorials using recursion.    
+7 factorial = 5040
 
-namespace ConsoleApp1
-{
-    class Program
-    {
         public static void Main(string[] args)
         {
             Console.WriteLine("Please enter a number");
