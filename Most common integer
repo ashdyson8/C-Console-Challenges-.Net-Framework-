@@ -1,9 +1,7 @@
 Most frequent number in a list of integers - C#
-Input -> 4, 4, 6, 8, 5, 2, 4, 8, 9, 9  output -> 4, frequented 3 times
+Input -> 4, 4, 6, 8, 5, 2, 4, 8, 9, 9  output -> 4, with a frequency of
 
 
-class Program
-    {
         public static void Main(string[] args)
         {
             var numbers = new List<int> { 4, 4, 6, 8, 5, 2, 4, 8, 9, 9 };
@@ -21,5 +19,5 @@ class Program
             Console.WriteLine("the most common element is " + element + " and the element has been included in the list " + count + " times " );
             Console.ReadLine();
         }
-    }
+    
 
