@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.IO;
+Minimum number of operations in order to partition a given array
+E.g. Input -> {3,5,3,7,9,4,1} K = 3 
+    Output -> 3 (the array is partitioned {3,3,3} {7,7} {4,4})
 
-namespace ConsoleApp1
-{
-    class Program
-    {
         public static void Main(string[] args)
         {
             int k = 3;
@@ -34,12 +27,10 @@ namespace ConsoleApp1
                 for (int j = 1; j <= maxGroups; j++)
                 {
 
-
                     dp[i, j] = int.MaxValue;
 
                     if (j == 1)
                     {
-
 
                         int[] freq = new int[100000];
                         int freqOfMode = 0;
@@ -82,5 +73,4 @@ namespace ConsoleApp1
             return dp[n - 1, k];
 
         }
-    }
-}
+    
