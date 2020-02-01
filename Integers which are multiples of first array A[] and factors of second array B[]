@@ -1,4 +1,12 @@
-
+Example:
+Input: A[] = {1, 2, 2, 4}, B[] = {16, 32, 64}
+Output: 4 8 16
+4, 8 and 16 are the only numbers that
+are multiples of all the elements of array A[]
+and divide all the elements of array B[]
+        
+        
+        
         static void Main(string[] args) //driver code
         {
             int[] a = { 1, 1, 2, 4 };
